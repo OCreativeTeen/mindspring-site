@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MindStoryRoom 心理咨询官网骨架
 
-## Getting Started
+基于 `Next.js + Vercel`，可直接上线。  
+域名：`mindstoryroom.com`（在 BlueHost 管理）。
 
-First, run the development server:
+## 本地运行
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+访问：`http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 页面结构
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 首页（主张 + 人群 + CTA）
+- 信任组件（咨询方式/工作取向/保密原则）
+- 服务
+- 关于我
+- 预约与费用
+- 隐私与保密
+- FAQ
 
-## Learn More
+## 一键替换项
 
-To learn more about Next.js, take a look at the following resources:
+- Logo：顶部 `MindStoryRoom` 文字（可改为图片）
+- 联系方式：`mailto` 和 `tel` 链接
+- 服务内容：`src/app/page.tsx` 的 `services` 数组和服务卡片内容
+- 费用/政策：预约与费用区域文本
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 部署到 Vercel（绑定 BlueHost 域名）
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. 把项目推送到 GitHub
+2. 在 Vercel 导入项目并部署
+3. Vercel 项目中添加域名：`mindstoryroom.com`
+4. 到 BlueHost DNS 配置：
+   - `A @ -> 76.76.21.21`（或按 Vercel 提示）
+   - `CNAME www -> cname.vercel-dns.com`
+5. 等待 DNS 生效后访问：
+   - `https://mindstoryroom.com`
