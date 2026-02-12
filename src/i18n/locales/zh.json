@@ -128,11 +128,11 @@
     "duration": "单次时长",
     "durationValue": "50 分钟",
     "fee": "参考费用",
-    "feeValue": "¥500 / 次（示例）",
+    "feeValue": "单人CAD$150/次, 情侣CAD$200/次",
     "format": "咨询形式",
     "formatValue": "线上 / 线下",
     "cancelPolicy": "取消政策：如需改期或取消，请至少提前 24 小时通知；24 小时内取消将收取一次咨询费用。",
-    "paymentNote": "支持 e-Transfer 转账至上述邮箱。",
+    "paymentNote": "支持 e-Transfer 转账 >>  MINDSTORYROOM@GMAIL.COM",
     "cta": "开始预约",
     "phone": "电话咨询"
   },

@@ -9,7 +9,7 @@ const titles: Record<Locale, string> = {
 
 const descriptions: Record<Locale, string> = {
   zh: "在一个不断瓦解与重构的时代，我们帮助人重新找到内在的锚点。跨学科心理支持——连接现实、关系、精神与未来。",
-  en: "In an era of constant disruption and reconstruction, we help people rediscover their inner anchor. Cross-disciplinary mental support connecting reality, relationships, spirit, and future.",
+  en: "In an era of constant disruption and restoration, we help people rediscover their inner anchor. Cross-disciplinary mental support connecting reality, relationships, spirit, and future.",
 };
 
 export async function generateStaticParams() {
