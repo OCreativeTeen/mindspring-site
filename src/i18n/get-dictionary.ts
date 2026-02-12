@@ -7,5 +7,5 @@ const dictionaries: Record<Locale, () => Promise<Record<string, unknown>>> = {
 };
 
 export async function getDictionary(locale: Locale) {
-  return dictionaries[locale]?.() ?? dictionaries.zh();
+  return dictionaries[locale]?.() ?? dictionaries["zh-TW"]();
 }

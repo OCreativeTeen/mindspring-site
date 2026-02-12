@@ -25,7 +25,7 @@ npm run dev
 ## Logo 与联系
 
 - **Logo**：将 `logo_r.png`（圆形）与 `logo.png`（方形）放入 `public/` 文件夹
-- **联系方式**：已配置为 wellness.mindspring@gmail.com、289-879-8627（e-Transfer 至同邮箱）
+- **联系方式**：已配置为 support@mindstoryroom.com、289-879-8627（e-Transfer 至同邮箱）
 - 服务内容：`src/app/page.tsx` 的 `services` 数组和服务卡片内容
 - 费用/政策：预约与费用区域文本
 
