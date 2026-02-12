@@ -5,10 +5,44 @@
     "cta": "Book Session"
   },
   "hero": {
-    "label": "Psychotherapy",
-    "title": "Slow down anxiety. Restore order to your life.",
-    "subtitle": "For high-pressure professionals, relationship struggles, and emotional rollercoasters—we offer structured, boundary-conscious, confidential counseling.",
+    "label": "Navigators for the Era",
+    "title": "In an era of constant disruption and reconstruction, we help people rediscover their inner anchor.",
+    "subtitle": "Amid structural change, era pressure, and value tension, we offer cross-disciplinary mental support—connecting reality, relationships, spirit, and future.",
     "cta": "Book a 15-min intro call"
+  },
+  "why": {
+    "title": "Why We Exist",
+    "intro": "We live in a time of profound transition. AI and automation are reshaping work and value structures; education and career paths are fracturing; marriage and family are transforming; traditional and modern values are in tension.",
+    "challenges": "More and more young people face lost direction, identity crisis, relationship and marriage pressure, uncertainty about work and future, and a vacuum of meaning and spirit.",
+    "conclusion": "Mental health is no longer just personal—it is an era issue. We exist to respond to this moment."
+  },
+  "vision": {
+    "title": "Vision",
+    "text": "We help people today rediscover themselves, build stable inner structure, and reconnect with society, relationships, and meaning in a time of upheaval.",
+    "believe": "Mental health is not only about reducing pain—it is about rebuilding direction. True support must address psychology, social reality, philosophy and values, and spiritual and meaning exploration."
+  },
+  "principles": {
+    "title": "Core Principles",
+    "reality": {
+      "title": "Reality-Oriented",
+      "desc": "We don't avoid change or offer empty comfort. We help people understand the real world."
+    },
+    "integrated": {
+      "title": "Integrated Perspective",
+      "desc": "A method that integrates psychology, philosophy, social observation, and spiritual reflection."
+    },
+    "human": {
+      "title": "Human-Centered",
+      "desc": "No labeling, no ideology. Every person's experience is taken seriously."
+    },
+    "relational": {
+      "title": "Relational Healing",
+      "desc": "Family, marriage, and social relationships are the foundation of psychological stability."
+    },
+    "meaning": {
+      "title": "Meaning Reconstruction",
+      "desc": "Helping people re-understand the meaning of work, the value of relationships, and their place in existence."
+    }
   },
   "trust": {
     "method": {
@@ -17,60 +51,71 @@
     },
     "approach": {
       "title": "Therapeutic Approach",
-      "desc": "Integrative work drawing from CBT, ACT, psychoanalytic orientations—matched to your needs and stage."
+      "desc": "Integrating psychology, philosophy, social observation, and spiritual reflection—matched to your issues and stage."
     },
     "confidentiality": {
       "title": "Confidentiality",
       "desc": "Nothing shared without your written consent. Except where law requires (e.g., immediate risk), we follow strict ethical protocols."
     }
   },
-  "whatYouGet": {
-    "title": "What You Can Expect",
-    "desc": "If you're stuck in chronic stress, conflict, anxiety, or self-criticism—we'll break it down into steps and gradually restore a sense of control and stability.",
-    "services": [
-      "Individual therapy",
-      "Couple & relationship counseling",
-      "Anxiety & stress management",
-      "Workplace well-being",
-      "Family-of-origin & self-growth"
+  "mission": {
+    "title": "Mission",
+    "intro": "We build a cross-disciplinary mental support model. Our goal is not to help people escape reality, but to build inner order amid disruption and find a practical path through chaos.",
+    "pillars": [
+      "Counseling & coaching",
+      "Social & era analysis",
+      "AI-era identity & value exploration",
+      "Marriage & family rebuilding",
+      "Spirit & meaning-oriented growth"
     ]
   },
   "services": {
-    "title": "Services",
-    "individual": {
-      "title": "Individual Therapy",
-      "desc": "Emotional distress, stress, trauma, self-worth, and life choices."
+    "title": "Service Areas",
+    "ai": {
+      "title": "AI-Era Counseling",
+      "desc": "Career anxiety and future-sense rebuilding; identity amid technological disruption; learning and growth strategies in an AI environment."
     },
-    "couple": {
-      "title": "Couple Counseling",
-      "desc": "Conflict patterns, communication, trust, and boundaries."
+    "relationship": {
+      "title": "Marriage & Family Support",
+      "desc": "Contemporary marriage pressure and role shifts; gender differences in psychological needs; relationship repair amid family structure change."
     },
-    "anxiety": {
-      "title": "Anxiety & Workplace Stress",
-      "desc": "For high-pressure professionals—sleep, hypervigilance, worries, burnout."
+    "education": {
+      "title": "Education & Youth Direction",
+      "desc": "Psychological impact of education-work disconnect; young people's direction rebuilding; life path design."
     },
-    "family": {
-      "title": "Family-of-Origin & Long-term Patterns",
-      "desc": "Understanding how early relationships shape the present; rebuilding self-relationship and boundaries."
+    "spiritual": {
+      "title": "Spiritual & Philosophical Exploration",
+      "desc": "Questions of meaning; tension between faith and modern society; space for deeper value dialogue."
+    }
+  },
+  "positioning": {
+    "title": "Our Positioning",
+    "not": {
+      "title": "We are not",
+      "items": ["A traditional single-purpose therapy clinic", "A service that only offers emotional comfort"]
+    },
+    "are": {
+      "title": "We are",
+      "text": "Navigators for the era—a support system connecting reality, relationships, spirit, and future."
     }
   },
   "about": {
-    "title": "About Me",
+    "title": "About Us",
     "credentials": {
       "label": "Credentials & Training",
-      "text": "Nationally accredited counseling credentials; ongoing training in CBT, ACT, psychoanalytic approaches and clinical supervision."
+      "text": "Nationally accredited counseling credentials; ongoing training in CBT, ACT, psychoanalytic approaches, and clinical supervision."
     },
     "approach": {
-      "label": "Approach",
-      "text": "Integrative: first stabilize emotions and daily functioning, then explore relational patterns and core beliefs."
+      "label": "Integrated Method",
+      "text": "Integrating psychology, philosophy, social observation, and spiritual reflection—first stabilizing emotion and daily function, then exploring relational patterns and core beliefs."
     },
     "values": {
       "label": "Values",
-      "text": "Respect, boundaries, non-judgment. You're not 'broken'—you're carrying difficulty and actively seeking a way forward."
+      "text": "Respect, boundaries, non-judgment. Every person's experience is taken seriously—no labeling, no ideology."
     },
     "workStyle": {
       "label": "Working Style",
-      "text": "Goal-oriented + process-aware. Each phase clarifies goals, tracks progress, and plans next steps."
+      "text": "Reality-oriented and goal-focused. Each phase clarifies goals, tracks progress, and plans the next practical steps."
     }
   },
   "booking": {

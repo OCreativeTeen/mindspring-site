@@ -8,8 +8,8 @@ const titles: Record<Locale, string> = {
 };
 
 const descriptions: Record<Locale, string> = {
-  zh: "让焦虑慢下来，让生活重新有秩序。面向高压工作者、关系困扰与情绪反复人群的结构化心理咨询服务。",
-  en: "Slow down anxiety. Restore order to your life. Structured, confidential counseling for high-pressure professionals.",
+  zh: "在一个不断瓦解与重构的时代，我们帮助人重新找到内在的锚点。跨学科心理支持——连接现实、关系、精神与未来。",
+  en: "In an era of constant disruption and reconstruction, we help people rediscover their inner anchor. Cross-disciplinary mental support connecting reality, relationships, spirit, and future.",
 };
 
 export async function generateStaticParams() {

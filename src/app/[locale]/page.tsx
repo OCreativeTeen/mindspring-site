@@ -15,18 +15,29 @@ export default async function Home({
 
   const header = t.header as Record<string, string>;
   const hero = t.hero as Record<string, string>;
-  const trust = t.trust as Record<string, { title: string; desc: string }>;
-  const whatYouGet = t.whatYouGet as {
+  const why = t.why as Record<string, string>;
+  const vision = t.vision as Record<string, string>;
+  const principles = t.principles as {
     title: string;
-    desc: string;
-    services: string[];
+    reality: { title: string; desc: string };
+    integrated: { title: string; desc: string };
+    human: { title: string; desc: string };
+    relational: { title: string; desc: string };
+    meaning: { title: string; desc: string };
   };
+  const trust = t.trust as Record<string, { title: string; desc: string }>;
+  const mission = t.mission as { title: string; intro: string; pillars: string[] };
   const services = t.services as {
     title: string;
-    individual: { title: string; desc: string };
-    couple: { title: string; desc: string };
-    anxiety: { title: string; desc: string };
-    family: { title: string; desc: string };
+    ai: { title: string; desc: string };
+    relationship: { title: string; desc: string };
+    education: { title: string; desc: string };
+    spiritual: { title: string; desc: string };
+  };
+  const positioning = t.positioning as {
+    title: string;
+    not: { title: string; items: string[] };
+    are: { title: string; text: string };
   };
   const about = t.about as {
     title: string;
@@ -40,6 +51,14 @@ export default async function Home({
   const faq = t.faq as { title: string; items: { q: string; a: string }[] };
   const footer = t.footer as Record<string, string>;
   const contact = t.contact as { phone: string; email: string };
+
+  const principleItems = [
+    principles.reality,
+    principles.integrated,
+    principles.human,
+    principles.relational,
+    principles.meaning,
+  ];
 
   return (
     <div className="min-h-screen">
@@ -94,6 +113,120 @@ export default async function Home({
         </section>
 
         <section className="container-shell pb-16">
+          <div className="section-card p-8 md:p-10">
+            <h2 className="text-2xl font-semibold">{why.title}</h2>
+            <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
+              {why.intro}
+            </p>
+            <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
+              {why.challenges}
+            </p>
+            <p className="mt-4 text-sm font-medium leading-7">
+              {why.conclusion}
+            </p>
+          </div>
+        </section>
+
+        <section className="container-shell pb-16">
+          <div className="section-card p-8 md:p-10">
+            <h2 className="text-2xl font-semibold">{vision.title}</h2>
+            <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
+              {vision.text}
+            </p>
+            <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
+              {vision.believe}
+            </p>
+          </div>
+        </section>
+
+        <section className="container-shell pb-16">
+          <h2 className="text-2xl font-semibold">{principles.title}</h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {principleItems.map((item) => (
+              <article key={item.title} className="section-card p-6">
+                <h3 className="text-lg font-semibold">{item.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                  {item.desc}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="container-shell pb-16">
+          <div className="section-card p-8 md:p-10">
+            <h2 className="text-2xl font-semibold">{mission.title}</h2>
+            <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
+              {mission.intro}
+            </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {mission.pillars.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="services" className="container-shell pb-16">
+          <h2 className="text-2xl font-semibold">{services.title}</h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <article className="section-card p-6">
+              <h3 className="font-medium">{services.ai.title}</h3>
+              <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+                {services.ai.desc}
+              </p>
+            </article>
+            <article className="section-card p-6">
+              <h3 className="font-medium">{services.relationship.title}</h3>
+              <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+                {services.relationship.desc}
+              </p>
+            </article>
+            <article className="section-card p-6">
+              <h3 className="font-medium">{services.education.title}</h3>
+              <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+                {services.education.desc}
+              </p>
+            </article>
+            <article className="section-card p-6">
+              <h3 className="font-medium">{services.spiritual.title}</h3>
+              <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+                {services.spiritual.desc}
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section className="container-shell pb-16">
+          <div className="section-card p-8 md:p-10">
+            <h2 className="text-2xl font-semibold">{positioning.title}</h2>
+            <div className="mt-5 grid gap-6 md:grid-cols-2">
+              <div>
+                <h3 className="text-sm font-semibold text-[var(--muted)]">
+                  {positioning.not.title}
+                </h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-7 text-[var(--muted)]">
+                  {positioning.not.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-[var(--muted)]">
+                  {positioning.are.title}
+                </h3>
+                <p className="mt-2 text-sm leading-7">{positioning.are.text}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="container-shell pb-16">
           <div className="grid gap-4 md:grid-cols-3">
             <article className="section-card p-6">
               <h2 className="text-lg font-semibold">{trust.method.title}</h2>
@@ -113,55 +246,6 @@ export default async function Home({
               </h2>
               <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
                 {trust.confidentiality.desc}
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section className="container-shell pb-16">
-          <div className="section-card p-8 md:p-10">
-            <h2 className="text-2xl font-semibold">{whatYouGet.title}</h2>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[var(--muted)]">
-              {whatYouGet.desc}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {whatYouGet.services.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="services" className="container-shell pb-16">
-          <h2 className="text-2xl font-semibold">{services.title}</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <article className="section-card p-6">
-              <h3 className="font-medium">{services.individual.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
-                {services.individual.desc}
-              </p>
-            </article>
-            <article className="section-card p-6">
-              <h3 className="font-medium">{services.couple.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
-                {services.couple.desc}
-              </p>
-            </article>
-            <article className="section-card p-6">
-              <h3 className="font-medium">{services.anxiety.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
-                {services.anxiety.desc}
-              </p>
-            </article>
-            <article className="section-card p-6">
-              <h3 className="font-medium">{services.family.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
-                {services.family.desc}
               </p>
             </article>
           </div>
@@ -291,11 +375,23 @@ export default async function Home({
               />
             </div>
             <div>
-              <p>© {new Date().getFullYear()} {footer.copyright}</p>
+              <p>
+                © {new Date().getFullYear()} {footer.copyright}
+              </p>
               <p className="text-xs">
-                <a href={`mailto:${contact.email}`} className="hover:text-[var(--accent)]">{contact.email}</a>
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="hover:text-[var(--accent)]"
+                >
+                  {contact.email}
+                </a>
                 {" · "}
-                <a href={`tel:+1${contact.phone.replace(/\D/g, "")}`} className="hover:text-[var(--accent)]">{contact.phone}</a>
+                <a
+                  href={`tel:+1${contact.phone.replace(/\D/g, "")}`}
+                  className="hover:text-[var(--accent)]"
+                >
+                  {contact.phone}
+                </a>
               </p>
             </div>
           </div>
