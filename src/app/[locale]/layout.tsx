@@ -3,8 +3,8 @@ import "../globals.css";
 import { locales, type Locale } from "@/i18n/config";
 
 const titles: Record<Locale, string> = {
-  zh: "MindStoryRoom | 心理咨询",
-  en: "MindStoryRoom | Counseling",
+  zh: "心源心理健康中心 | MindSpring Wellness",
+  en: "MindSpring Wellness | 心源心理健康中心",
 };
 
 const descriptions: Record<Locale, string> = {

@@ -1,7 +1,7 @@
 {
   "header": {
-    "brand": "MindStoryRoom",
-    "tagline": "Counseling & Therapy",
+    "brand": "MindSpring Wellness",
+    "tagline": "心源心理健康中心",
     "cta": "Book Session"
   },
   "hero": {
@@ -87,6 +87,7 @@
     "format": "Format",
     "formatValue": "Online / In-person",
     "cancelPolicy": "Cancellation: Please notify at least 24 hours ahead; late cancellations incur one session fee.",
+    "paymentNote": "E-transfer payment to the email above.",
     "cta": "Book Now",
     "phone": "Call"
   },
@@ -117,7 +118,11 @@
     ]
   },
   "footer": {
-    "copyright": "MindStoryRoom Counseling",
-    "domain": "mindstoryroom.com (BlueHost)"
+    "copyright": "心源心理健康中心 MindSpring Wellness",
+    "domain": "mindstoryroom.com"
+  },
+  "contact": {
+    "phone": "289-879-8627",
+    "email": "mindstoryroom@gmail.com"
   }
 }

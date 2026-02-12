@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import { getDictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import LangSwitcher from "@/components/LangSwitcher";
@@ -37,18 +39,27 @@ export default async function Home({
   const privacy = t.privacy as { title: string; items: string[] };
   const faq = t.faq as { title: string; items: { q: string; a: string }[] };
   const footer = t.footer as Record<string, string>;
+  const contact = t.contact as { phone: string; email: string };
 
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
         <div className="container-shell flex h-16 items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-full bg-[var(--accent)]/20" />
+          <Link href={`/${localeTyped}`} className="flex items-center gap-3">
+            <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full">
+              <Image
+                src="/logo_r.png"
+                alt={header.brand}
+                width={40}
+                height={40}
+                className="object-cover"
+              />
+            </div>
             <div>
               <p className="text-sm font-semibold">{header.brand}</p>
               <p className="text-xs text-[var(--muted)]">{header.tagline}</p>
             </div>
-          </div>
+          </Link>
           <div className="flex items-center gap-3">
             <LangSwitcher locale={localeTyped} />
             <a
@@ -221,15 +232,18 @@ export default async function Home({
             <p className="mt-5 text-sm leading-7 text-[var(--muted)]">
               {booking.cancelPolicy}
             </p>
+            <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+              {booking.paymentNote}
+            </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href="mailto:hello@mindstoryroom.com"
+                href={`mailto:${contact.email}`}
                 className="rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-medium text-white"
               >
                 {booking.cta}
               </a>
               <a
-                href="tel:+86-000-0000-0000"
+                href={`tel:+1${contact.phone.replace(/\D/g, "")}`}
                 className="rounded-full border border-[var(--border)] px-5 py-2.5 text-sm font-medium"
               >
                 {booking.phone}
@@ -265,8 +279,26 @@ export default async function Home({
       </main>
 
       <footer className="border-t border-[var(--border)] py-8">
-        <div className="container-shell flex flex-col gap-2 text-sm text-[var(--muted)] md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} {footer.copyright}</p>
+        <div className="container-shell flex flex-col gap-4 text-sm text-[var(--muted)] md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-3">
+            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg">
+              <Image
+                src="/logo.png"
+                alt={footer.copyright}
+                width={48}
+                height={48}
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <p>© {new Date().getFullYear()} {footer.copyright}</p>
+              <p className="text-xs">
+                <a href={`mailto:${contact.email}`} className="hover:text-[var(--accent)]">{contact.email}</a>
+                {" · "}
+                <a href={`tel:+1${contact.phone.replace(/\D/g, "")}`} className="hover:text-[var(--accent)]">{contact.phone}</a>
+              </p>
+            </div>
+          </div>
           <p>{footer.domain}</p>
         </div>
       </footer>
