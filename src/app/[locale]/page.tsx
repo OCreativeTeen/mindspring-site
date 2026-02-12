@@ -313,12 +313,6 @@ export default async function Home({
                 <p className="mt-1 font-medium">{booking.formatValue}</p>
               </div>
             </div>
-            <p className="mt-5 text-sm leading-7 text-[var(--muted)]">
-              {booking.cancelPolicy}
-            </p>
-            <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
-              {booking.paymentNote}
-            </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href={`mailto:${contact.email}`}
@@ -333,6 +327,12 @@ export default async function Home({
                 {booking.phone}
               </a>
             </div>
+            <p className="mt-5 text-sm leading-7 text-[var(--muted)]">
+              {booking.cancelPolicy}
+            </p>
+            <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
+              {booking.paymentNote}
+            </p>
           </div>
         </section>
 
