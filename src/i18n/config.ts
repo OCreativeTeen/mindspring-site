@@ -1,9 +1,10 @@
-export const locales = ["zh", "en"] as const;
+export const locales = ["zh", "zh-TW", "en"] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "zh";
 
 export const localeNames: Record<Locale, string> = {
-  zh: "中文",
+  zh: "简体",
+  "zh-TW": "繁體",
   en: "English",
 };

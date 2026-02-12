@@ -12,7 +12,7 @@ export function middleware(request: NextRequest) {
 
   // 检查首段是否为有效 locale
   const segment = pathname.split("/")[1];
-  if (locales.includes(segment as "zh" | "en")) {
+  if (locales.includes(segment as "zh" | "zh-TW" | "en")) {
     return NextResponse.next();
   }
 

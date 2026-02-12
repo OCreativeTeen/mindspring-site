@@ -7,7 +7,10 @@ export default function SetLang() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const lang = pathname?.startsWith("/en") ? "en" : "zh-CN";
+    let lang = "zh-CN";
+    if (pathname?.startsWith("/en")) lang = "en";
+    else if (pathname?.startsWith("/zh-TW")) lang = "zh-TW";
+    else if (pathname?.startsWith("/zh")) lang = "zh-CN";
     document.documentElement.lang = lang;
   }, [pathname]);
 

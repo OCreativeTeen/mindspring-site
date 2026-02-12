@@ -47,7 +47,7 @@
   "trust": {
     "method": {
       "title": "Session Format",
-      "desc": "Both online and in-person. 60 minutes per session, typically weekly; can adjust to biweekly when stable."
+      "desc": "Online (in-person to be opened). 60 minutes per session, typically weekly; can adjust to biweekly when stable."
     },
     "approach": {
       "title": "Therapeutic Approach",
@@ -130,7 +130,7 @@
     "fee": "Fee",
     "feeValue": "CAD$150 / session, CAD$200 / couple",
     "format": "Format",
-    "formatValue": "Online / In-person",
+    "formatValue": "Online (in-person to be opened)",
     "cancelPolicy": "Cancellation: Please notify at least 24 hours ahead; late cancellations incur one session fee.",
     "paymentNote": "E-transfer payment >>  WELLNESS.MINDSPRING@GMAIL.COM",
     "cta": "Book Now",
