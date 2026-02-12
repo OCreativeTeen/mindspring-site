@@ -134,7 +134,8 @@
     "cancelPolicy": "Cancellation: Please notify at least 24 hours ahead; late cancellations incur one session fee.",
     "paymentNote": "E-transfer payment >>  support@mindstoryroom.com",
     "cta": "Book Now",
-    "phone": "Call"
+    "phone": "Call",
+    "wechat": "WeChat"
   },
   "privacy": {
     "title": "Privacy & Confidentiality",

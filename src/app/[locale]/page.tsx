@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getDictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import LangSwitcher from "@/components/LangSwitcher";
+import WeChatButton from "@/components/WeChatButton";
 
 export default async function Home({
   params,
@@ -327,6 +328,7 @@ export default async function Home({
               >
                 {booking.phone}
               </a>
+              <WeChatButton label={booking.wechat as string} />
             </div>
             <p className="mt-5 text-sm leading-7 text-[var(--muted)]">
               {booking.cancelPolicy}
