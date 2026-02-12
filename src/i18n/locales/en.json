@@ -162,6 +162,11 @@
       }
     ]
   },
+  "youtube": {
+    "title": "The Mind Stories",
+    "subtitle": "More on psychology, relationships, and the times—subscribe to our YouTube channel.",
+    "cta": "Visit YouTube Channel"
+  },
   "footer": {
     "copyright": "心源心理健康 MindSpring Wellness",
     "domain": "mindstoryroom.com"

@@ -162,6 +162,11 @@
       }
     ]
   },
+  "youtube": {
+    "title": "The Mind Stories",
+    "subtitle": "更多關於心理、關係與時代的分享，歡迎訂閱我們的 YouTube 頻道。",
+    "cta": "前往 YouTube 頻道"
+  },
   "footer": {
     "copyright": "心源心理健康 MindSpring Wellness",
     "domain": "mindstoryroom.com"
