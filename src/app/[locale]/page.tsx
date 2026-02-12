@@ -4,6 +4,7 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import LangSwitcher from "@/components/LangSwitcher";
 import WeChatButton from "@/components/WeChatButton";
+import { siteConfig } from "@/site-config";
 
 export default async function Home({
   params,
@@ -323,10 +324,10 @@ export default async function Home({
                 {booking.cta}
               </a>
               <a
-                href={`tel:+1${contact.phone.replace(/\D/g, "")}`}
+                href={`sms:+1${contact.phone.replace(/\D/g, "")}`}
                 className="rounded-full border border-[var(--border)] px-5 py-2.5 text-sm font-medium"
               >
-                {booking.phone}
+                {booking.sms}
               </a>
               <WeChatButton label={booking.wechat as string} />
             </div>
@@ -364,25 +365,27 @@ export default async function Home({
           </div>
         </section>
 
-        <section id="youtube" className="container-shell pb-24">
-          <div className="section-card p-8 md:p-10 text-center">
-            <h2 className="text-2xl font-semibold">{youtube.title}</h2>
-            <p className="mt-4 text-sm leading-7 text-[var(--muted)] max-w-xl mx-auto">
-              {youtube.subtitle}
-            </p>
-            <a
-              href="https://www.youtube.com/channel/UCeZ9nobfYZ5ToOLESIfE5bA"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#ff0000] px-6 py-3 text-sm font-medium text-white hover:bg-[#cc0000]"
-            >
-              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-              </svg>
-              {youtube.cta}
-            </a>
-          </div>
-        </section>
+        {siteConfig.showYouTubeSection && (
+          <section id="youtube" className="container-shell pb-24">
+            <div className="section-card p-8 md:p-10 text-center">
+              <h2 className="text-2xl font-semibold">{youtube.title}</h2>
+              <p className="mt-4 text-sm leading-7 text-[var(--muted)] max-w-xl mx-auto">
+                {youtube.subtitle}
+              </p>
+              <a
+                href="https://www.youtube.com/channel/UCeZ9nobfYZ5ToOLESIfE5bA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#ff0000] px-6 py-3 text-sm font-medium text-white hover:bg-[#cc0000]"
+              >
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+                {youtube.cta}
+              </a>
+            </div>
+          </section>
+        )}
       </main>
 
       <footer className="border-t border-[var(--border)] py-8">

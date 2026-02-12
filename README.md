@@ -22,6 +22,10 @@ npm run dev
 - 隐私与保密
 - FAQ
 
+## 功能開關
+
+- **`src/site-config.ts`**：`showYouTubeSection` 預設為 `false`（不顯示 YouTube 區塊）。改為 `true` 後重新 build 即可顯示。
+
 ## Logo 与联系
 
 - **Logo**：将 `logo_r.png`（圆形）与 `logo.png`（方形）放入 `public/` 文件夹

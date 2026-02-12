@@ -134,7 +134,7 @@
     "cancelPolicy": "取消政策：如需改期或取消，请至少提前 24 小时通知；24 小时内取消将收取一次咨询费用。",
     "paymentNote": "支持 e-Transfer 转账 >>  support@mindstoryroom.com",
     "cta": "开始预约",
-    "phone": "电话咨询",
+    "sms": "短信",
     "wechat": "微信"
   },
   "privacy": {
