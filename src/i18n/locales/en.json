@@ -47,7 +47,7 @@
   "trust": {
     "method": {
       "title": "Session Format",
-      "desc": "Both online and in-person. 50 minutes per session, typically weekly; can adjust to biweekly when stable."
+      "desc": "Both online and in-person. 60 minutes per session, typically weekly; can adjust to biweekly when stable."
     },
     "approach": {
       "title": "Therapeutic Approach",
@@ -126,7 +126,7 @@
       "Schedule regular sessions, frequency, and phase goals."
     ],
     "duration": "Session Length",
-    "durationValue": "50 minutes",
+    "durationValue": "60 minutes",
     "fee": "Fee",
     "feeValue": "CAD$150 / session, CAD$200 / couple",
     "format": "Format",
