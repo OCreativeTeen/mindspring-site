@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_SC } from "next/font/google";
 import "./globals.css";
+import SetLang from "@/components/SetLang";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
-const sourceHanLike = Noto_Sans_SC({
+const notoSans = Noto_Sans_SC({
   subsets: ["latin"],
   variable: "--font-source-han-like",
   display: "swap",
@@ -27,7 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={`${inter.variable} ${sourceHanLike.variable} antialiased`}>
+      <body className={`${inter.variable} ${notoSans.variable} antialiased`}>
+        <SetLang />
         {children}
       </body>
     </html>

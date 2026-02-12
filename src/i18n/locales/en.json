@@ -1,0 +1,123 @@
+{
+  "header": {
+    "brand": "MindStoryRoom",
+    "tagline": "Counseling & Therapy",
+    "cta": "Book Session"
+  },
+  "hero": {
+    "label": "Psychotherapy",
+    "title": "Slow down anxiety. Restore order to your life.",
+    "subtitle": "For high-pressure professionals, relationship struggles, and emotional rollercoasters—we offer structured, boundary-conscious, confidential counseling.",
+    "cta": "Book a 15-min intro call"
+  },
+  "trust": {
+    "method": {
+      "title": "Session Format",
+      "desc": "Both online and in-person. 50 minutes per session, typically weekly; can adjust to biweekly when stable."
+    },
+    "approach": {
+      "title": "Therapeutic Approach",
+      "desc": "Integrative work drawing from CBT, ACT, psychoanalytic orientations—matched to your needs and stage."
+    },
+    "confidentiality": {
+      "title": "Confidentiality",
+      "desc": "Nothing shared without your written consent. Except where law requires (e.g., immediate risk), we follow strict ethical protocols."
+    }
+  },
+  "whatYouGet": {
+    "title": "What You Can Expect",
+    "desc": "If you're stuck in chronic stress, conflict, anxiety, or self-criticism—we'll break it down into steps and gradually restore a sense of control and stability.",
+    "services": [
+      "Individual therapy",
+      "Couple & relationship counseling",
+      "Anxiety & stress management",
+      "Workplace well-being",
+      "Family-of-origin & self-growth"
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "individual": {
+      "title": "Individual Therapy",
+      "desc": "Emotional distress, stress, trauma, self-worth, and life choices."
+    },
+    "couple": {
+      "title": "Couple Counseling",
+      "desc": "Conflict patterns, communication, trust, and boundaries."
+    },
+    "anxiety": {
+      "title": "Anxiety & Workplace Stress",
+      "desc": "For high-pressure professionals—sleep, hypervigilance, worries, burnout."
+    },
+    "family": {
+      "title": "Family-of-Origin & Long-term Patterns",
+      "desc": "Understanding how early relationships shape the present; rebuilding self-relationship and boundaries."
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "credentials": {
+      "label": "Credentials & Training",
+      "text": "Nationally accredited counseling credentials; ongoing training in CBT, ACT, psychoanalytic approaches and clinical supervision."
+    },
+    "approach": {
+      "label": "Approach",
+      "text": "Integrative: first stabilize emotions and daily functioning, then explore relational patterns and core beliefs."
+    },
+    "values": {
+      "label": "Values",
+      "text": "Respect, boundaries, non-judgment. You're not 'broken'—you're carrying difficulty and actively seeking a way forward."
+    },
+    "workStyle": {
+      "label": "Working Style",
+      "text": "Goal-oriented + process-aware. Each phase clarifies goals, tracks progress, and plans next steps."
+    }
+  },
+  "booking": {
+    "title": "Booking & Fees",
+    "steps": [
+      "Submit your info (name/nickname, contact, brief concern).",
+      "15-min intro call to check fit and goals.",
+      "Schedule regular sessions, frequency, and phase goals."
+    ],
+    "duration": "Session Length",
+    "durationValue": "50 minutes",
+    "fee": "Fee",
+    "feeValue": "¥500 / session (example)",
+    "format": "Format",
+    "formatValue": "Online / In-person",
+    "cancelPolicy": "Cancellation: Please notify at least 24 hours ahead; late cancellations incur one session fee.",
+    "cta": "Book Now",
+    "phone": "Call"
+  },
+  "privacy": {
+    "title": "Privacy & Confidentiality",
+    "items": [
+      "Your personal data is used only for booking, sessions, and necessary communication.",
+      "Records are kept minimal with strict access control.",
+      "No disclosure to family, employers, or third parties without your consent.",
+      "Only in legally required high-risk situations (e.g., imminent harm) do we follow mandated procedures."
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "What happens in the first session?",
+        "a": "We clarify your main concerns, goals, and how we'll work together—so you know what to expect."
+      },
+      {
+        "q": "Does therapy actually work?",
+        "a": "Therapy isn't about being persuaded. It's about understanding patterns and adjusting responses through a stable, structured relationship. Change grows from ongoing collaboration."
+      },
+      {
+        "q": "How many sessions do I need?",
+        "a": "Short-term work often starts with 6–12 sessions. Deeper issues (long-term patterns, trauma) may need longer."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "MindStoryRoom Counseling",
+    "domain": "mindstoryroom.com (BlueHost)"
+  }
+}
