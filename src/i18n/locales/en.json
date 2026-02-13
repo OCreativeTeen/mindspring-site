@@ -69,6 +69,19 @@
       "Spirit & meaning-oriented growth"
     ]
   },
+  "offerings": {
+    "servicesTitle": "Our Services",
+    "services": ["Free Consultation", "Individual Therapy", "Couples Therapy", "Family Therapy", "Premarital Counselling"],
+    "specialitiesTitle": "Our Specialities",
+    "specialities": ["Abuse", "Addictions", "Anxiety and Depression", "Grief and Loss", "Relationships", "Trauma"],
+    "serveTitle": "Who We Serve",
+    "serve": {
+      "individuals": "Individuals: Children, Teens, Adults, Seniors",
+      "couplesEnrichment": "Couples: Premarital Counselling & Relationship Enrichment",
+      "couplesDistressed": "Couples: Distressed or Disconnected Relationships",
+      "families": "Families"
+    }
+  },
   "services": {
     "title": "Service Areas",
     "ai": {

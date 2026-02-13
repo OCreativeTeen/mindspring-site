@@ -29,6 +29,14 @@ export default async function Home({
   };
   const trust = t.trust as Record<string, { title: string; desc: string }>;
   const mission = t.mission as { title: string; intro: string; pillars: string[] };
+  const offerings = t.offerings as {
+    servicesTitle: string;
+    services: string[];
+    specialitiesTitle: string;
+    specialities: string[];
+    serveTitle: string;
+    serve: Record<string, string>;
+  };
   const services = t.services as {
     title: string;
     ai: { title: string; desc: string };
@@ -172,6 +180,36 @@ export default async function Home({
                 </span>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="offerings" className="container-shell pb-16">
+          <div className="grid gap-6 md:grid-cols-3">
+            <article className="section-card p-6">
+              <h3 className="text-lg font-semibold">{offerings.servicesTitle}</h3>
+              <ul className="mt-4 space-y-2 text-sm leading-7 text-[var(--muted)]">
+                {offerings.services.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+            <article className="section-card p-6">
+              <h3 className="text-lg font-semibold">{offerings.specialitiesTitle}</h3>
+              <ul className="mt-4 space-y-2 text-sm leading-7 text-[var(--muted)]">
+                {offerings.specialities.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+            <article className="section-card p-6">
+              <h3 className="text-lg font-semibold">{offerings.serveTitle}</h3>
+              <ul className="mt-4 space-y-2 text-sm leading-7 text-[var(--muted)]">
+                <li>{offerings.serve.individuals}</li>
+                <li>{offerings.serve.couplesEnrichment}</li>
+                <li>{offerings.serve.couplesDistressed}</li>
+                <li>{offerings.serve.families}</li>
+              </ul>
+            </article>
           </div>
         </section>
 

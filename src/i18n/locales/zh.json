@@ -69,6 +69,19 @@
       "精神与意义导向的成长路径"
     ]
   },
+  "offerings": {
+    "servicesTitle": "服務項目",
+    "services": ["免費諮詢", "個別諮詢", "伴侶諮詢", "家庭諮詢", "婚前輔導"],
+    "specialitiesTitle": "專長領域",
+    "specialities": ["虐待", "成癮", "焦慮與憂鬱", "哀傷與失落", "親密關係", "創傷"],
+    "serveTitle": "服務對象",
+    "serve": {
+      "individuals": "個人：兒童、青少年、成人、銀髮族",
+      "couplesEnrichment": "伴侶：婚前輔導與關係經營",
+      "couplesDistressed": "伴侶：關係困境或疏離",
+      "families": "家庭"
+    }
+  },
   "services": {
     "title": "服务方向",
     "ai": {
