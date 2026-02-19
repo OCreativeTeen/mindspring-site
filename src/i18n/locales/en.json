@@ -145,7 +145,7 @@
     "format": "Format",
     "formatValue": "Online (in-person to be opened)",
     "cancelPolicy": "Cancellation: Please notify at least 24 hours ahead; late cancellations incur one session fee.",
-    "paymentNote": "E-transfer payment >>  support@mindstoryroom.com",
+    "paymentNote": "E-transfer payment >>  admin@mindspringwellness.ca",
     "cta": "Book Now",
     "sms": "Text",
     "wechat": "WeChat"
@@ -183,10 +183,10 @@
   },
   "footer": {
     "copyright": "心源心理健康 MindSpring Wellness",
-    "domain": "mindstoryroom.com"
+    "domain": "mindspringwellness.ca"
   },
   "contact": {
     "phone": "289-879-8627",
-    "email": "support@mindstoryroom.com"
+    "email": "admin@mindspringwellness.ca"
   }
 }

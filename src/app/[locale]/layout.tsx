@@ -27,7 +27,7 @@ export async function generateMetadata({
   return {
     title: titles[locale as Locale],
     description: descriptions[locale as Locale],
-    metadataBase: new URL("https://mindstoryroom.com"),
+    metadataBase: new URL("https://mindspringwellness.ca"),
     alternates: {
       languages: {
         zh: "/zh",

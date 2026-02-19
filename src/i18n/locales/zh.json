@@ -145,7 +145,7 @@
     "format": "咨询形式",
     "formatValue": "线上 (线下待开放)",
     "cancelPolicy": "取消政策：如需改期或取消，请至少提前 24 小时通知；24 小时内取消将收取一次咨询费用。",
-    "paymentNote": "支持 e-Transfer 转账 >>  support@mindstoryroom.com",
+    "paymentNote": "支持 e-Transfer 转账 >>  admin@mindspringwellness.ca",
     "cta": "开始预约",
     "sms": "短信",
     "wechat": "微信"
@@ -183,10 +183,10 @@
   },
   "footer": {
     "copyright": "心源心理健康 MindSpring Wellness",
-    "domain": "mindstoryroom.com"
+    "domain": "mindspringwellness.ca"
   },
   "contact": {
     "phone": "289-879-8627",
-    "email": "support@mindstoryroom.com"
+    "email": "admin@mindspringwellness.ca"
   }
 }

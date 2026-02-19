@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "心源心理健康 | MindSpring Wellness",
   description:
     "在一个不断瓦解与重构的时代，我们帮助人重新找到内在的锚点。跨学科心理支持——连接现实、关系、精神与未来。",
-  metadataBase: new URL("https://mindstoryroom.com"),
+  metadataBase: new URL("https://mindspringwellness.ca"),
 };
 
 export default function RootLayout({
