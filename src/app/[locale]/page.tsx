@@ -4,7 +4,7 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import LangSwitcher from "@/components/LangSwitcher";
 import WeChatButton from "@/components/WeChatButton";
-import { siteConfig } from "@/site-config";
+import { siteConfig, sectionIcons } from "@/site-config";
 
 export default async function Home({
   params,
@@ -125,7 +125,7 @@ export default async function Home({
 
         <section className="container-shell pb-16">
           <div className="section-card p-8 md:p-10">
-            <h2 className="text-2xl font-semibold">{why.title}</h2>
+            <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.why}</span>{why.title}</h2>
             <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
               {why.intro}
             </p>
@@ -140,7 +140,7 @@ export default async function Home({
 
         <section className="container-shell pb-16">
           <div className="section-card p-8 md:p-10">
-            <h2 className="text-2xl font-semibold">{vision.title}</h2>
+            <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.vision}</span>{vision.title}</h2>
             <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
               {vision.text}
             </p>
@@ -151,7 +151,7 @@ export default async function Home({
         </section>
 
         <section className="container-shell pb-16">
-          <h2 className="text-2xl font-semibold">{principles.title}</h2>
+          <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.principles}</span>{principles.title}</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {principleItems.map((item) => (
               <article key={item.title} className="section-card p-6">
@@ -166,7 +166,7 @@ export default async function Home({
 
         <section className="container-shell pb-16">
           <div className="section-card p-8 md:p-10">
-            <h2 className="text-2xl font-semibold">{mission.title}</h2>
+            <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.mission}</span>{mission.title}</h2>
             <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
               {mission.intro}
             </p>
@@ -186,7 +186,7 @@ export default async function Home({
         <section id="offerings" className="container-shell pb-16">
           <div className="grid gap-6 md:grid-cols-3">
             <article className="section-card p-6">
-              <h3 className="text-lg font-semibold">{offerings.servicesTitle}</h3>
+              <h3 className="text-lg font-semibold"><span className="mr-1.5" aria-hidden>{sectionIcons.offeringsServices}</span>{offerings.servicesTitle}</h3>
               <ul className="mt-4 space-y-2 text-sm leading-7 text-[var(--muted)]">
                 {offerings.services.map((item) => (
                   <li key={item}>{item}</li>
@@ -194,7 +194,7 @@ export default async function Home({
               </ul>
             </article>
             <article className="section-card p-6">
-              <h3 className="text-lg font-semibold">{offerings.specialitiesTitle}</h3>
+              <h3 className="text-lg font-semibold"><span className="mr-1.5" aria-hidden>{sectionIcons.offeringsSpecialities}</span>{offerings.specialitiesTitle}</h3>
               <ul className="mt-4 space-y-2 text-sm leading-7 text-[var(--muted)]">
                 {offerings.specialities.map((item) => (
                   <li key={item}>{item}</li>
@@ -202,7 +202,7 @@ export default async function Home({
               </ul>
             </article>
             <article className="section-card p-6">
-              <h3 className="text-lg font-semibold">{offerings.serveTitle}</h3>
+              <h3 className="text-lg font-semibold"><span className="mr-1.5" aria-hidden>{sectionIcons.offeringsServe}</span>{offerings.serveTitle}</h3>
               <ul className="mt-4 space-y-2 text-sm leading-7 text-[var(--muted)]">
                 <li>{offerings.serve.individuals}</li>
                 <li>{offerings.serve.couplesEnrichment}</li>
@@ -214,7 +214,7 @@ export default async function Home({
         </section>
 
         <section id="services" className="container-shell pb-16">
-          <h2 className="text-2xl font-semibold">{services.title}</h2>
+          <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.services}</span>{services.title}</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <article className="section-card p-6">
               <h3 className="font-medium">{services.ai.title}</h3>
@@ -245,7 +245,7 @@ export default async function Home({
 
         <section className="container-shell pb-16">
           <div className="section-card p-8 md:p-10">
-            <h2 className="text-2xl font-semibold">{positioning.title}</h2>
+            <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.positioning}</span>{positioning.title}</h2>
             <div className="mt-5 grid gap-6 md:grid-cols-2">
               <div>
                 <h3 className="text-sm font-semibold text-[var(--muted)]">
@@ -270,13 +270,13 @@ export default async function Home({
         <section className="container-shell pb-16">
           <div className="grid gap-4 md:grid-cols-3">
             <article className="section-card p-6">
-              <h2 className="text-lg font-semibold">{trust.method.title}</h2>
+              <h2 className="text-lg font-semibold"><span className="mr-1.5" aria-hidden>{sectionIcons.trustMethod}</span>{trust.method.title}</h2>
               <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
                 {trust.method.desc}
               </p>
             </article>
             <article className="section-card p-6">
-              <h2 className="text-lg font-semibold">{trust.approach.title}</h2>
+              <h2 className="text-lg font-semibold"><span className="mr-1.5" aria-hidden>{sectionIcons.trustApproach}</span>{trust.approach.title}</h2>
               <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
                 {trust.approach.desc}
               </p>
@@ -294,7 +294,7 @@ export default async function Home({
 
         <section id="about" className="container-shell pb-16">
           <div className="section-card p-8 md:p-10">
-            <h2 className="text-2xl font-semibold">{about.title}</h2>
+            <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.about}</span>{about.title}</h2>
             <div className="mt-5 grid gap-6 md:grid-cols-2">
               <div>
                 <h3 className="text-sm font-semibold text-[var(--muted)]">
@@ -334,7 +334,7 @@ export default async function Home({
 
         <section id="booking" className="container-shell pb-16">
           <div className="section-card p-8 md:p-10">
-            <h2 className="text-2xl font-semibold">{booking.title}</h2>
+            <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.booking}</span>{booking.title}</h2>
             <ol className="mt-5 list-decimal space-y-2 pl-5 text-sm leading-7 text-[var(--muted)]">
               {(booking.steps as string[]).map((step, i) => (
                 <li key={i}>{step}</li>
@@ -380,7 +380,7 @@ export default async function Home({
 
         <section id="privacy" className="container-shell pb-16">
           <div className="section-card p-8 md:p-10">
-            <h2 className="text-2xl font-semibold">{privacy.title}</h2>
+            <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.privacy}</span>{privacy.title}</h2>
             <ul className="mt-5 space-y-3 text-sm leading-7 text-[var(--muted)]">
               {privacy.items.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -390,7 +390,7 @@ export default async function Home({
         </section>
 
         <section id="faq" className="container-shell pb-16">
-          <h2 className="text-2xl font-semibold">{faq.title}</h2>
+          <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.faq}</span>{faq.title}</h2>
           <div className="mt-6 space-y-4">
             {faq.items.map((item) => (
               <article key={item.q} className="section-card p-6">
@@ -406,7 +406,7 @@ export default async function Home({
         {siteConfig.showYouTubeSection && (
           <section id="youtube" className="container-shell pb-24">
             <div className="section-card p-8 md:p-10 text-center">
-              <h2 className="text-2xl font-semibold">{youtube.title}</h2>
+              <h2 className="text-2xl font-semibold"><span className="mr-2" aria-hidden>{sectionIcons.youtube}</span>{youtube.title}</h2>
               <p className="mt-4 text-sm leading-7 text-[var(--muted)] max-w-xl mx-auto">
                 {youtube.subtitle}
               </p>
