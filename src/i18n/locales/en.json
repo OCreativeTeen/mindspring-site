@@ -1,4 +1,4 @@
-{
+{ 
   "header": {
     "brand": "MindSpring Wellness",
     "tagline": "心源心理健康",
@@ -6,9 +6,9 @@
   },
   "hero": {
     "label": "Navigators for the Era",
-    "title": "In an era of constant disruption and reconstruction, we help people rediscover their inner anchor.",
+    "title": "In a world that never stops shifting, we help people find their inner anchor again.",
     "subtitle": "Amid structural change, era pressure, and value tension, we offer cross-disciplinary mental support—connecting reality, relationships, spirit, and future.",
-    "cta": "Book a 15-min consultation"
+    "cta": "Book a 15-min freeconsultation"
   },
   "why": {
     "title": "Why We Exist",
@@ -141,7 +141,7 @@
     "duration": "Session Length",
     "durationValue": "60 minutes",
     "fee": "Fee",
-    "feeValue": "CAD$150 / session, CAD$200 / couple",
+    "feeValue": "CAD$150 / session, CAD$200 / couple (accept insurance)",
     "format": "Format",
     "formatValue": "Online (in-person to be opened)",
     "cancelPolicy": "Cancellation: Please notify at least 24 hours ahead; late cancellations incur one session fee.",
