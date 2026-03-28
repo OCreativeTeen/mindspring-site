@@ -411,7 +411,7 @@ export default async function Home({
                 {youtube.subtitle}
               </p>
               <a
-                href="https://www.youtube.com/channel/UCeZ9nobfYZ5ToOLESIfE5bA"
+                href={siteConfig.youtubeChannelUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#ff0000] px-6 py-3 text-sm font-medium text-white hover:bg-[#cc0000]"

@@ -24,7 +24,9 @@ npm run dev
 
 ## 功能開關
 
-- **`src/site-config.ts`**：`showYouTubeSection` 預設為 `false`（不顯示 YouTube 區塊）。改為 `true` 後重新 build 即可顯示。
+- **`src/site-config.ts`**
+  - `showYouTubeSection`：是否顯示 YouTube 區塊（`true` / `false`）
+  - `youtubeChannelUrl`：頻道連結（例如 `https://www.youtube.com/@你的頻道`）
 
 ## Logo 与联系
 
