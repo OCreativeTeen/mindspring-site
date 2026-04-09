@@ -5,6 +5,7 @@ import type { Locale } from "@/i18n/config";
 import LangSwitcher from "@/components/LangSwitcher";
 import WeChatButton from "@/components/WeChatButton";
 import CreditCardPaymentButton from "@/components/CreditCardPaymentButton";
+import ETransferButton from "@/components/ETransferButton";
 import { siteConfig, sectionIcons } from "@/site-config";
 
 export default async function Home({
@@ -373,8 +374,15 @@ export default async function Home({
             <p className="mt-5 text-sm leading-7 text-[var(--muted)]">
               {booking.cancelPolicy}
             </p>
-            <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm leading-7 text-[var(--muted)]">
-              <span>{booking.paymentNote}</span>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <ETransferButton
+                email={siteConfig.eTransferEmail}
+                labels={{
+                  eTransferButton: booking.eTransferButton as string,
+                  eTransferModalTitle: booking.eTransferModalTitle as string,
+                  eTransferModalInstruction: booking.eTransferModalInstruction as string,
+                }}
+              />
               <CreditCardPaymentButton
                 labels={{
                   creditCard: booking.creditCard as string,
@@ -387,7 +395,7 @@ export default async function Home({
                   stripeOther250: booking.stripeOther250 as string,
                 }}
               />
-            </p>
+            </div>
           </div>
         </section>
 

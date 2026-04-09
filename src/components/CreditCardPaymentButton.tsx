@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { stripePaymentOptions } from "@/site-config";
+import { paymentActionButtonClass } from "@/components/ETransferButton";
 
 type Labels = {
   creditCard: string;
@@ -33,7 +34,7 @@ export default function CreditCardPaymentButton({ labels }: { labels: Labels }) 
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-flex shrink-0 items-center rounded-full border border-[var(--border)] bg-white px-4 py-1.5 text-sm font-medium hover:border-[var(--accent)]/40 hover:text-[var(--accent)]"
+        className={paymentActionButtonClass}
       >
         {labels.creditCard}
       </button>

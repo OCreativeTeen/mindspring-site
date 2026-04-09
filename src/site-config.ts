@@ -8,6 +8,8 @@ export const siteConfig = {
   showYouTubeSection: true,
   /** YouTube 頻道連結（@ 或 channel URL） */
   youtubeChannelUrl: "https://www.youtube.com/@creativeteen4995",
+  /** e-Transfer 收款信箱（彈窗內顯示） */
+  eTransferEmail: "admin@mindspringwellness.ca",
 } as const;
 
 /** Stripe 付款連結（與預約區塊「信用卡付款」彈窗對應） */
