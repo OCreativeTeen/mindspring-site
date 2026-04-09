@@ -148,7 +148,15 @@
     "paymentNote": "E-transfer payment >>  admin@mindspringwellness.ca",
     "cta": "Book Now",
     "sms": "Text",
-    "wechat": "WeChat"
+    "wechat": "WeChat",
+    "creditCard": "Credit card payment",
+    "creditCardTitle": "Choose an amount",
+    "creditCardHint": "You will be redirected to Stripe secure checkout.",
+    "stripeSingle": "Individual CAD$150",
+    "stripeCouple": "Couples CAD$200",
+    "stripeOther100": "Other (CAD$100)",
+    "stripeOther180": "Other (CAD$180)",
+    "stripeOther250": "Other (CAD$250)"
   },
   "privacy": {
     "title": "Privacy & Confidentiality",

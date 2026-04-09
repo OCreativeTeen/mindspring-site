@@ -164,7 +164,15 @@
         "paymentNote": "支持 e-Transfer 轉帳 >>  admin@mindspringwellness.ca",
         "cta": "預約",
         "sms": "短信",
-        "wechat": "微信"
+        "wechat": "微信",
+        "creditCard": "信用卡付款",
+        "creditCardTitle": "選擇付款金額",
+        "creditCardHint": "點擊後將前往 Stripe 安全付款頁面。",
+        "stripeSingle": "單人 CAD$150",
+        "stripeCouple": "情侶 CAD$200",
+        "stripeOther100": "其他 (CAD$100)",
+        "stripeOther180": "其他 (CAD$180)",
+        "stripeOther250": "其他 (CAD$250)"
     },
     "privacy": {
         "title": "隱私與保密",

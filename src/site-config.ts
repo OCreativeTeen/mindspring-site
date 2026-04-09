@@ -10,6 +10,30 @@ export const siteConfig = {
   youtubeChannelUrl: "https://www.youtube.com/@creativeteen4995",
 } as const;
 
+/** Stripe 付款連結（與預約區塊「信用卡付款」彈窗對應） */
+export const stripePaymentOptions = [
+  {
+    id: "single",
+    url: "https://buy.stripe.com/9B6bIU1Eb7gC49xdkXdEs03",
+  },
+  {
+    id: "couple",
+    url: "https://buy.stripe.com/aFa9AMbeLcAWfSfep1dEs00",
+  },
+  {
+    id: "other100",
+    url: "https://buy.stripe.com/aFa28kciP0SeeOb94HdEs05",
+  },
+  {
+    id: "other180",
+    url: "https://buy.stripe.com/3cI5kw96DbwS49x1CfdEs02",
+  },
+  {
+    id: "other250",
+    url: "https://buy.stripe.com/eVqaEQaaHcAW6hFa8LdEs04",
+  },
+] as const;
+
 /** 區塊標題前的圖示（可改為其他 emoji 或字元） */
 export const sectionIcons = {
   why: "🌍",

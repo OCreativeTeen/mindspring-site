@@ -4,6 +4,7 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import LangSwitcher from "@/components/LangSwitcher";
 import WeChatButton from "@/components/WeChatButton";
+import CreditCardPaymentButton from "@/components/CreditCardPaymentButton";
 import { siteConfig, sectionIcons } from "@/site-config";
 
 export default async function Home({
@@ -372,8 +373,20 @@ export default async function Home({
             <p className="mt-5 text-sm leading-7 text-[var(--muted)]">
               {booking.cancelPolicy}
             </p>
-            <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
-              {booking.paymentNote}
+            <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm leading-7 text-[var(--muted)]">
+              <span>{booking.paymentNote}</span>
+              <CreditCardPaymentButton
+                labels={{
+                  creditCard: booking.creditCard as string,
+                  creditCardTitle: booking.creditCardTitle as string,
+                  creditCardHint: booking.creditCardHint as string,
+                  stripeSingle: booking.stripeSingle as string,
+                  stripeCouple: booking.stripeCouple as string,
+                  stripeOther100: booking.stripeOther100 as string,
+                  stripeOther180: booking.stripeOther180 as string,
+                  stripeOther250: booking.stripeOther250 as string,
+                }}
+              />
             </p>
           </div>
         </section>
