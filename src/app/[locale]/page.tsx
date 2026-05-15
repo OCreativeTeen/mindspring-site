@@ -84,15 +84,17 @@ export default async function Home({
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
-        <div className="container-shell flex min-h-[100px] items-center justify-between py-3">
+        <div className="container-shell flex min-h-16 items-center justify-between py-2">
           <Link href={`/${localeTyped}`} className="flex items-center gap-3">
-            <div className="relative h-[100px] w-[100px] shrink-0 overflow-hidden rounded-full">
+            <div className="relative w-[100px] shrink-0">
               <Image
-                src="/logo_r.png"
+                src="/logo2.png"
                 alt={header.brand}
                 width={100}
-                height={100}
-                className="object-cover"
+                height={40}
+                className="h-auto w-[100px] object-contain object-left"
+                sizes="100px"
+                priority
               />
             </div>
             <div>
