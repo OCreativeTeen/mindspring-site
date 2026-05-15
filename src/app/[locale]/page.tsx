@@ -120,7 +120,7 @@ export default async function Home({
           <div className="mt-8">
             <a
               href="#booking"
-              className="inline-flex rounded-full bg-[var(--accent)] px-8 py-4 text-[1.75rem] font-medium leading-snug text-white md:px-10 md:py-5"
+              className="inline-flex rounded-full bg-[var(--accent)] px-[1.33rem] py-[0.67rem] text-[1.1667rem] font-medium leading-snug text-white md:px-[1.67rem] md:py-[0.83rem]"
             >
               {hero.cta}
             </a>
