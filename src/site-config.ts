@@ -4,8 +4,14 @@
  */
 
 export const siteConfig = {
-  /** 是否顯示 YouTube 頻道區塊 */
+  /** 是否顯示 YouTube 頻道區塊（首頁 hero 下方） */
   showYouTubeSection: true,
+  /**
+   * 首頁置頂宣傳用 YouTube 影片。可填完整網址（watch / youtu.be）或 11 位影片 ID；
+   * 空字串則仍顯示頻道連結與訂閱提示，但不顯示播放器。
+   */
+  featuredYoutubeVideo:
+    "https://www.youtube.com/watch?v=acGKBkUxN8Y" as string,
   /** YouTube 頻道連結（@ 或 channel URL） */
   youtubeChannelUrl: "https://www.youtube.com/@creativeteen4995",
   /** e-Transfer 收款信箱（彈窗內顯示） */
@@ -56,3 +62,33 @@ export const sectionIcons = {
   faq: "❓",
   youtube: "▶️",
 } as const;
+
+/** 從網址或 ID 解析可用於 /embed/ 的 YouTube 影片 ID */
+export function getYoutubeVideoIdForEmbed(input: string): string | null {
+  const s = input.trim();
+  if (!s) return null;
+  if (/^[a-zA-Z0-9_-]{11}$/.test(s)) return s;
+  try {
+    const u = new URL(s);
+    if (u.hostname === "youtu.be" || u.hostname.endsWith(".youtu.be")) {
+      const id = u.pathname.replace(/^\//, "").split("/")[0];
+      return id?.length === 11 ? id : null;
+    }
+    if (u.hostname.includes("youtube.com")) {
+      const v = u.searchParams.get("v");
+      if (v && /^[a-zA-Z0-9_-]{11}$/.test(v)) return v;
+      const parts = u.pathname.split("/").filter(Boolean);
+      const embedIdx = parts.indexOf("embed");
+      if (
+        embedIdx >= 0 &&
+        parts[embedIdx + 1] &&
+        /^[a-zA-Z0-9_-]{11}$/.test(parts[embedIdx + 1])
+      ) {
+        return parts[embedIdx + 1];
+      }
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
