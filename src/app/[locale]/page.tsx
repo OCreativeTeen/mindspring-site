@@ -86,14 +86,14 @@ export default async function Home({
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
         <div className="container-shell flex w-full items-center justify-between gap-4 py-3 md:gap-5">
           <Link href={`/${localeTyped}`} className="shrink-0">
-            <div className="relative w-[150px] shrink-0">
+            <div className="relative w-[160px] shrink-0">
               <Image
                 src="/logo2.png"
                 alt={header.brand}
-                width={150}
-                height={60}
-                className="h-auto w-[150px] object-contain object-left"
-                sizes="150px"
+                width={160}
+                height={64}
+                className="h-auto w-[160px] object-contain object-left"
+                sizes="160px"
                 priority
               />
             </div>
