@@ -84,30 +84,32 @@ export default async function Home({
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
-        <div className="container-shell flex min-h-16 items-center justify-between gap-3 py-2">
-          <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-4 gap-y-2 md:gap-x-6">
+        <div className="container-shell flex items-center py-3">
+          <div className="flex items-center gap-4 md:gap-5">
             <Link href={`/${localeTyped}`} className="shrink-0">
-              <div className="relative w-[120px] shrink-0">
+              <div className="relative w-[150px] shrink-0">
                 <Image
                   src="/logo2.png"
                   alt={header.brand}
-                  width={120}
-                  height={48}
-                  className="h-auto w-[120px] object-contain object-left"
-                  sizes="120px"
+                  width={150}
+                  height={60}
+                  className="h-auto w-[150px] object-contain object-left"
+                  sizes="150px"
                   priority
                 />
               </div>
             </Link>
-            <a
-              href="#booking"
-              className="inline-flex shrink-0 rounded-full bg-[var(--accent)] px-3 py-2 text-xs !font-bold leading-snug !text-white md:px-4 md:py-2 md:text-sm"
-            >
-              {hero.cta}
-            </a>
-          </div>
-          <div className="shrink-0">
-            <LangSwitcher locale={localeTyped} />
+            <div className="flex min-w-0 flex-col gap-2">
+              <a
+                href="#booking"
+                className="inline-flex w-fit max-w-full rounded-full bg-[var(--accent)] px-4 py-2 text-[0.975rem] !font-bold leading-snug !text-white md:px-5 md:py-2 md:text-[1.138rem]"
+              >
+                {hero.cta}
+              </a>
+              <div className="w-fit">
+                <LangSwitcher locale={localeTyped} />
+              </div>
+            </div>
           </div>
         </div>
       </header>

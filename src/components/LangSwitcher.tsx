@@ -18,7 +18,7 @@ export default function LangSwitcher({ locale }: { locale: Locale }) {
           <Link
             key={loc}
             href={newPath}
-            className={`rounded-full px-2 py-0.5 text-[10px] !font-bold transition-colors md:px-2.5 md:text-[11px] ${
+            className={`rounded-full px-2 py-0.5 text-[11.5px] !font-bold transition-colors md:px-2.5 md:text-[12.65px] ${
               isActive
                 ? "bg-white/25 !text-white"
                 : "!text-white/85 hover:bg-white/15 hover:!text-white"
