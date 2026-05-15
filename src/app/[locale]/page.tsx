@@ -86,12 +86,12 @@ export default async function Home({
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
         <div className="container-shell flex h-16 items-center justify-between">
           <Link href={`/${localeTyped}`} className="flex items-center gap-3">
-            <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full">
+            <div className="relative h-[53px] w-[53px] shrink-0 overflow-hidden rounded-full">
               <Image
                 src="/logo_r.png"
                 alt={header.brand}
-                width={40}
-                height={40}
+                width={53}
+                height={53}
                 className="object-cover"
               />
             </div>

@@ -9,7 +9,7 @@ export default function LangSwitcher({ locale }: { locale: Locale }) {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center gap-1 rounded-full border border-[var(--border)] p-1">
+    <div className="flex items-center gap-1 rounded-full bg-[var(--accent)] p-1">
       {locales.map((loc) => {
         const newPath = pathname?.replace(`/${locale}`, `/${loc}`) ?? `/${loc}`;
         const isActive = loc === locale;
@@ -18,10 +18,10 @@ export default function LangSwitcher({ locale }: { locale: Locale }) {
           <Link
             key={loc}
             href={newPath}
-            className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+            className={`rounded-full px-3 py-1 text-xs font-bold transition-colors ${
               isActive
-                ? "bg-[var(--accent)] text-white"
-                : "text-[var(--muted)] hover:border-[var(--accent)]/30 hover:text-[var(--accent)]"
+                ? "bg-white/25 text-white"
+                : "text-white/85 hover:bg-white/15 hover:text-white"
             }`}
           >
             {localeNames[loc]}
