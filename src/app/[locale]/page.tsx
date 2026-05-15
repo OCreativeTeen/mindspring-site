@@ -84,25 +84,29 @@ export default async function Home({
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
-        <div className="container-shell flex min-h-16 items-center justify-between py-2">
-          <Link href={`/${localeTyped}`} className="flex items-center gap-3">
-            <div className="relative w-[100px] shrink-0">
-              <Image
-                src="/logo2.png"
-                alt={header.brand}
-                width={100}
-                height={40}
-                className="h-auto w-[100px] object-contain object-left"
-                sizes="100px"
-                priority
-              />
-            </div>
-            <div>
-              <p className="text-sm font-semibold">{header.brand}</p>
-              <p className="text-xs text-[var(--muted)]">{header.tagline}</p>
-            </div>
-          </Link>
-          <div className="flex items-center">
+        <div className="container-shell flex min-h-16 items-center justify-between gap-3 py-2">
+          <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-4 gap-y-2 md:gap-x-6">
+            <Link href={`/${localeTyped}`} className="shrink-0">
+              <div className="relative w-[120px] shrink-0">
+                <Image
+                  src="/logo2.png"
+                  alt={header.brand}
+                  width={120}
+                  height={48}
+                  className="h-auto w-[120px] object-contain object-left"
+                  sizes="120px"
+                  priority
+                />
+              </div>
+            </Link>
+            <a
+              href="#booking"
+              className="inline-flex shrink-0 rounded-full bg-[var(--accent)] px-3 py-2 text-xs !font-bold leading-snug !text-white md:px-4 md:py-2 md:text-sm"
+            >
+              {hero.cta}
+            </a>
+          </div>
+          <div className="shrink-0">
             <LangSwitcher locale={localeTyped} />
           </div>
         </div>
@@ -119,14 +123,6 @@ export default async function Home({
           <p className="mt-6 max-w-3xl text-base leading-7 text-[var(--muted)] md:text-lg">
             {hero.subtitle}
           </p>
-          <div className="mt-8">
-            <a
-              href="#booking"
-              className="inline-flex rounded-full bg-[var(--accent)] px-[1.33rem] py-[0.67rem] text-[1.458rem] !font-bold leading-snug !text-white md:px-[1.67rem] md:py-[0.83rem]"
-            >
-              {hero.cta}
-            </a>
-          </div>
         </section>
 
         {siteConfig.showYouTubeSection && (
