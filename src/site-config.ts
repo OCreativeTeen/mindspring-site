@@ -18,11 +18,11 @@ export const youtubeFeaturedCopy: Record<
     outboundCta: "Subscribe",
   },
   zh: {
-    channelTitle: "Mind Spring Melody · 心泉旋律",
+    channelTitle: "Mind Spring Melody · 心源旋律",
     outboundCta: "订阅",
   },
   "zh-TW": {
-    channelTitle: "Mind Spring Melody · 心泉旋律",
+    channelTitle: "Mind Spring Melody · 心源旋律",
     outboundCta: "訂閱",
   },
 };
