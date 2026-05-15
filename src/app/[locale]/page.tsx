@@ -84,14 +84,14 @@ export default async function Home({
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
-        <div className="container-shell flex h-16 items-center justify-between">
+        <div className="container-shell flex min-h-[72px] items-center justify-between py-2">
           <Link href={`/${localeTyped}`} className="flex items-center gap-3">
-            <div className="relative h-[53px] w-[53px] shrink-0 overflow-hidden rounded-full">
+            <div className="relative h-[70px] w-[70px] shrink-0 overflow-hidden rounded-full">
               <Image
                 src="/logo_r.png"
                 alt={header.brand}
-                width={53}
-                height={53}
+                width={70}
+                height={70}
                 className="object-cover"
               />
             </div>
@@ -120,7 +120,7 @@ export default async function Home({
           <div className="mt-8">
             <a
               href="#booking"
-              className="inline-flex rounded-full bg-[var(--accent)] px-[1.33rem] py-[0.67rem] text-[1.1667rem] !font-bold leading-snug !text-white md:px-[1.67rem] md:py-[0.83rem]"
+              className="inline-flex rounded-full bg-[var(--accent)] px-[1.33rem] py-[0.67rem] text-[1.458rem] !font-bold leading-snug !text-white md:px-[1.67rem] md:py-[0.83rem]"
             >
               {hero.cta}
             </a>
