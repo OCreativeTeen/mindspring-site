@@ -100,14 +100,8 @@ export default async function Home({
               <p className="text-xs text-[var(--muted)]">{header.tagline}</p>
             </div>
           </Link>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <LangSwitcher locale={localeTyped} />
-            <a
-              href="#booking"
-              className="rounded-full bg-[var(--accent)] px-4 py-2 text-sm font-medium text-white"
-            >
-              {header.cta}
-            </a>
           </div>
         </div>
       </header>
@@ -117,13 +111,7 @@ export default async function Home({
           <p className="mb-4 text-sm font-medium text-[var(--accent)]">
             {hero.label}
           </p>
-          <h1
-            className={
-              localeTyped === "en"
-                ? "max-w-3xl text-[1.125rem] font-bold leading-tight md:text-[1.8rem]"
-                : "max-w-3xl text-3xl font-bold leading-tight md:text-5xl"
-            }
-          >
+          <h1 className="max-w-3xl text-[1.25rem] font-bold leading-tight md:text-[2rem]">
             {hero.title}
           </h1>
           <p className="mt-6 max-w-3xl text-base leading-7 text-[var(--muted)] md:text-lg">
@@ -132,7 +120,7 @@ export default async function Home({
           <div className="mt-8">
             <a
               href="#booking"
-              className="inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-medium text-white"
+              className="inline-flex rounded-full bg-[var(--accent)] px-8 py-4 text-[1.75rem] font-medium leading-snug text-white md:px-10 md:py-5"
             >
               {hero.cta}
             </a>
