@@ -14,15 +14,15 @@ export const youtubeFeaturedCopy: Record<
   { channelTitle: string; outboundCta: string }
 > = {
   en: {
-    channelTitle: "Mind Spring Melody",
+    channelTitle: "MindSpringMelody",
     outboundCta: "Subscribe",
   },
   zh: {
-    channelTitle: "Mind Spring Melody · 心源旋律",
+    channelTitle: "MindSpringMelody · 心源旋律",
     outboundCta: "订阅",
   },
   "zh-TW": {
-    channelTitle: "Mind Spring Melody · 心源旋律",
+    channelTitle: "MindSpringMelody · 心源旋律",
     outboundCta: "訂閱",
   },
 };

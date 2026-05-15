@@ -84,32 +84,28 @@ export default async function Home({
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
-        <div className="container-shell flex items-center py-3">
-          <div className="flex items-center gap-4 md:gap-5">
-            <Link href={`/${localeTyped}`} className="shrink-0">
-              <div className="relative w-[150px] shrink-0">
-                <Image
-                  src="/logo2.png"
-                  alt={header.brand}
-                  width={150}
-                  height={60}
-                  className="h-auto w-[150px] object-contain object-left"
-                  sizes="150px"
-                  priority
-                />
-              </div>
-            </Link>
-            <div className="flex min-w-0 flex-col gap-2">
-              <a
-                href="#booking"
-                className="inline-flex w-fit max-w-full rounded-full bg-[var(--accent)] px-4 py-2 text-[0.975rem] !font-bold leading-snug !text-white md:px-5 md:py-2 md:text-[1.138rem]"
-              >
-                {hero.cta}
-              </a>
-              <div className="w-fit">
-                <LangSwitcher locale={localeTyped} />
-              </div>
+        <div className="container-shell flex w-full items-center justify-between gap-4 py-3 md:gap-5">
+          <Link href={`/${localeTyped}`} className="shrink-0">
+            <div className="relative w-[150px] shrink-0">
+              <Image
+                src="/logo2.png"
+                alt={header.brand}
+                width={150}
+                height={60}
+                className="h-auto w-[150px] object-contain object-left"
+                sizes="150px"
+                priority
+              />
             </div>
+          </Link>
+          <div className="flex min-w-0 flex-col items-end gap-2">
+            <a
+              href="#booking"
+              className="inline-flex w-fit max-w-full rounded-full bg-[var(--accent)] px-4 py-2 text-[0.975rem] !font-bold leading-snug !text-white md:px-5 md:py-2 md:text-[1.138rem]"
+            >
+              {hero.cta}
+            </a>
+            <LangSwitcher locale={localeTyped} />
           </div>
         </div>
       </header>
