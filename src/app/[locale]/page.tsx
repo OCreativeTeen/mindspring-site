@@ -101,7 +101,7 @@ export default async function Home({
           <div className="flex min-w-0 flex-col items-end gap-2">
             <a
               href="#booking"
-              className="inline-flex w-fit max-w-full rounded-full bg-[var(--accent)] px-4 py-2 text-[0.975rem] !font-bold leading-snug !text-white md:px-5 md:py-2 md:text-[1.138rem]"
+              className="inline-flex w-fit max-w-full rounded-full bg-[var(--accent)] px-4 py-2 text-[1.219rem] !font-bold leading-snug !text-white md:px-5 md:py-2 md:text-[1.423rem]"
             >
               {hero.cta}
             </a>
