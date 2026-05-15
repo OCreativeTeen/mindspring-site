@@ -17,7 +17,7 @@ const notoSans = Noto_Sans_SC({
 export const metadata: Metadata = {
   title: "心源心理健康 | MindSpring Wellness",
   description:
-    "在不断瓦解重构的时代，重寻内在的锚点",
+    "不断瓦解重构的时代? 重寻内在的锚点..",
   metadataBase: new URL("https://mindspringwellness.ca"),
 };
 

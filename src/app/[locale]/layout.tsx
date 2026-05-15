@@ -10,7 +10,7 @@ const titles: Record<Locale, string> = {
 
 const descriptions: Record<Locale, string> = {
   zh: "在不断瓦解重构的时代，重新找到内在的锚点",
-  "zh-TW": "在不斷瓦解重構的時代，重新找到內在的錨點",
+  "zh-TW": "不斷瓦解重構的時代? 重新找到內在的錨點..",
   en: "When everything feels in flux, we help people return to their inner anchor",
 };
 
