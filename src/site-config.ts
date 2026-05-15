@@ -3,6 +3,30 @@
  * 修改後需重新 build / 重新整理
  */
 
+import type { Locale } from "@/i18n/config";
+
+/**
+ * 首頁 YouTube 置頂區塊文案（依介面語言）。
+ * 頻道網址仍用 `siteConfig.youtubeChannelUrl`。
+ */
+export const youtubeFeaturedCopy: Record<
+  Locale,
+  { channelTitle: string; outboundCta: string }
+> = {
+  en: {
+    channelTitle: "Mind Spring Melody",
+    outboundCta: "Subscribe",
+  },
+  zh: {
+    channelTitle: "Mind Spring Melody · 心泉旋律",
+    outboundCta: "订阅",
+  },
+  "zh-TW": {
+    channelTitle: "Mind Spring Melody · 心泉旋律",
+    outboundCta: "訂閱",
+  },
+};
+
 export const siteConfig = {
   /** 是否顯示 YouTube 頻道區塊（首頁 hero 下方） */
   showYouTubeSection: true,
