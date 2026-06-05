@@ -31,11 +31,15 @@ export const siteConfig = {
   /** 是否顯示 YouTube 頻道區塊（首頁 hero 下方） */
   showYouTubeSection: true,
   /**
-   * 首頁置頂宣傳用 YouTube 影片。可填完整網址（watch / youtu.be）或 11 位影片 ID；
-   * 空字串則仍顯示頻道連結與訂閱提示，但不顯示播放器。
+   * 首頁置頂宣傳用 YouTube 影片清單。可填完整網址（watch / youtu.be）或 11 位影片 ID；
+   * 使用者每次開啟首頁時從清單中隨機選一支播放。空陣列則仍顯示頻道連結與訂閱提示，但不顯示播放器。
    */
-  featuredYoutubeVideo:
-    "https://www.youtube.com/watch?v=acGKBkUxN8Y" as string,
+  featuredYoutubeVideos: [
+    "https://youtu.be/CfSLOOfV9ng",
+    "https://youtu.be/K868lG3id9g",
+    "https://youtu.be/acGKBkUxN8Y",
+    "https://youtu.be/JUahDh8Kf28",
+  ],
   /** YouTube 頻道連結（@ 或 channel URL） */
   youtubeChannelUrl: "https://www.youtube.com/@creativeteen4995",
   /** e-Transfer 收款信箱（彈窗內顯示） */
@@ -115,4 +119,22 @@ export function getYoutubeVideoIdForEmbed(input: string): string | null {
     return null;
   }
   return null;
+}
+
+/** 將設定中的影片清單解析為可嵌入的 YouTube 影片 ID */
+export function getYoutubeVideoIdsForEmbed(
+  inputs: readonly string[],
+): string[] {
+  return inputs
+    .map(getYoutubeVideoIdForEmbed)
+    .filter((id): id is string => id !== null);
+}
+
+/** 從影片清單中隨機選一支可嵌入的 YouTube 影片 ID */
+export function pickRandomYoutubeVideoIdForEmbed(
+  inputs: readonly string[],
+): string | null {
+  const ids = getYoutubeVideoIdsForEmbed(inputs);
+  if (ids.length === 0) return null;
+  return ids[Math.floor(Math.random() * ids.length)];
 }

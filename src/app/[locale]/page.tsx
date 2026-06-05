@@ -6,8 +6,9 @@ import LangSwitcher from "@/components/LangSwitcher";
 import WeChatButton from "@/components/WeChatButton";
 import CreditCardPaymentButton from "@/components/CreditCardPaymentButton";
 import ETransferButton from "@/components/ETransferButton";
+import FeaturedYoutubeEmbed from "@/components/FeaturedYoutubeEmbed";
 import {
-  getYoutubeVideoIdForEmbed,
+  getYoutubeVideoIdsForEmbed,
   siteConfig,
   sectionIcons,
   youtubeFeaturedCopy,
@@ -69,9 +70,9 @@ export default async function Home({
   const footer = t.footer as Record<string, string>;
   const contact = t.contact as { phone: string; email: string };
   const ytCopy = youtubeFeaturedCopy[localeTyped];
-  const featuredYoutubeId = siteConfig.showYouTubeSection
-    ? getYoutubeVideoIdForEmbed(siteConfig.featuredYoutubeVideo)
-    : null;
+  const featuredYoutubeIds = siteConfig.showYouTubeSection
+    ? getYoutubeVideoIdsForEmbed(siteConfig.featuredYoutubeVideos)
+    : [];
 
   const principleItems = [
     principles.reality,
@@ -145,16 +146,11 @@ export default async function Home({
                 </a>
                 <span className="min-w-0">{ytCopy.channelTitle}</span>
               </h2>
-              {featuredYoutubeId ? (
-                <div className="relative mx-auto mt-3 aspect-video w-full max-w-3xl overflow-hidden rounded-xl border border-[var(--border)] bg-black">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${featuredYoutubeId}`}
-                    title={ytCopy.channelTitle}
-                    className="absolute inset-0 h-full w-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  />
-                </div>
+              {featuredYoutubeIds.length > 0 ? (
+                <FeaturedYoutubeEmbed
+                  videos={siteConfig.featuredYoutubeVideos}
+                  title={ytCopy.channelTitle}
+                />
               ) : null}
               <div
                 className="mt-3 h-px w-full bg-[var(--border)]"
