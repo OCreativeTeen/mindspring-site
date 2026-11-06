@@ -141,7 +141,7 @@
     "duration": "Session Length",
     "durationValue": "60 minutes",
     "fee": "Fee",
-    "feeValue": "CAD$150 / session, CAD$200 / couple (accept insurance)",
+    "feeValue": "CAD$150 / session, CAD$200 / couple, CAD$1500 / course (accept insurance)",
     "format": "Format",
     "formatValue": "Online (in-person to be opened)",
     "cancelPolicy": "Cancellation: Please notify at least 24 hours ahead; late cancellations incur one session fee.",
@@ -157,6 +157,7 @@
     "creditCardHint": "You will be redirected to Stripe secure checkout.",
     "stripeSingle": "Individual CAD$150",
     "stripeCouple": "Couples CAD$200",
+    "stripeCourse": "Full course CAD$1500",
     "stripeOther100": "Other (CAD$100)",
     "stripeOther180": "Other (CAD$180)",
     "stripeOther250": "Other (CAD$250)"

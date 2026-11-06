@@ -157,7 +157,7 @@
         "duration": "單次時長",
         "durationValue": "60 分鐘",
         "fee": "參考費用",
-        "feeValue": "單人CAD$150/次, 情侶CAD$200/次 (接受保險)",
+        "feeValue": "單人CAD$150/次, 情侶CAD$200/次, 療程CAD$1500 (接受保險)",
         "format": "諮詢形式",
         "formatValue": "線上 (線下待開放)",
         "cancelPolicy": "取消政策：如需改期或取消，請至少提前 24 小時通知；24 小時內取消將收取一次諮詢費用。",
@@ -173,6 +173,7 @@
         "creditCardHint": "點擊後將前往 Stripe 安全付款頁面。",
         "stripeSingle": "單人 CAD$150",
         "stripeCouple": "情侶 CAD$200",
+        "stripeCourse": "療程 CAD$1500",
         "stripeOther100": "其他 (CAD$100)",
         "stripeOther180": "其他 (CAD$180)",
         "stripeOther250": "其他 (CAD$250)"

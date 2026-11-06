@@ -57,6 +57,10 @@ export const stripePaymentOptions = [
     url: "https://buy.stripe.com/aFa9AMbeLcAWfSfep1dEs00",
   },
   {
+    id: "course",
+    url: "https://buy.stripe.com/cNibIU82z58ucG33KndEs07",
+  },
+  {
     id: "other100",
     url: "https://buy.stripe.com/aFa28kciP0SeeOb94HdEs05",
   },

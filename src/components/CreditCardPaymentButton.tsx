@@ -10,6 +10,7 @@ type Labels = {
   creditCardHint: string;
   stripeSingle: string;
   stripeCouple: string;
+  stripeCourse: string;
   stripeOther100: string;
   stripeOther180: string;
   stripeOther250: string;
@@ -21,6 +22,7 @@ const labelKeyById: Record<
 > = {
   single: "stripeSingle",
   couple: "stripeCouple",
+  course: "stripeCourse",
   other100: "stripeOther100",
   other180: "stripeOther180",
   other250: "stripeOther250",

@@ -425,6 +425,7 @@ export default async function Home({
                   creditCardHint: booking.creditCardHint as string,
                   stripeSingle: booking.stripeSingle as string,
                   stripeCouple: booking.stripeCouple as string,
+                  stripeCourse: booking.stripeCourse as string,
                   stripeOther100: booking.stripeOther100 as string,
                   stripeOther180: booking.stripeOther180 as string,
                   stripeOther250: booking.stripeOther250 as string,
